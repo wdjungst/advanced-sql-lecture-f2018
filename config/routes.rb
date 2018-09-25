@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   namespace :api do
     resources :properties, only: [:index]
     get 'cities/:city', to: 'properties#city'
+    resources :agents, only: [:index, :show]
+    resources :buyers, only: [:show]
   end
 
   #Do not place any routes below this one

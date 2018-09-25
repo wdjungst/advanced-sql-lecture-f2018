@@ -11,6 +11,7 @@ import AuthRoute from './AuthRoute';
 import FetchUser from './FetchUser';
 import Available from './Available';
 import Cities from './Cities';
+import FindHome from './FindHome';
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
             <Route exact path='/' component={Home} />
             <Route exact path='/available' component={Available} />
             <Route exact path='/cities' component={Cities} />
+            <Route exact path='/find_home' component={FindHome} />
             <AuthRoute exact path='/login' component={Login} />
             <AuthRoute exact path='/register' component={Register} />
             <Route component={NoMatch} />
