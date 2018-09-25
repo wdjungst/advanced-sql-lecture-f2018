@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     get 'cities/:city', to: 'properties#city'
     resources :agents, only: [:index, :show]
     resources :buyers, only: [:show]
+    get 'properties/city_cost', to: 'properties#city_cost'
   end
 
   #Do not place any routes below this one
